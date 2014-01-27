@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="../src/angular-gauge.js"></script>
+<script src="../components/gauge.js/dist/gauge.min.js"></script>
+
+<meta charset=utf-8 />
+<title>Angular-Gaugejs</title>
+</head>
+<body ng-app="gauge" class="container">
+  <h2>Gauge.js for angular</h2>
+  <hr />
+  
+  <div ng-controller="test">
+      <canvas gaugejs options="gaugeOptions" value="value" max-value="maxValue" animation-time="animationTime"></canvas>
+      <hr />
+      
+      <label for="">Value</label>
+      <input type="number" ng-model="value" />
+
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "angular-gaugejs",
+  "version": "0.1",
+  "main": [
+    "angular-gaugejs.js"
+  ],
+  "ignore": [
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": "~1.2.9",
+    "gauge.js": "latest"
+  }
+}
