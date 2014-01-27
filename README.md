@@ -10,7 +10,7 @@ Include both gauge.js and angular-gauge.js in your application.
 
 ```html
 <script src="components/gauge.js/dist/gauge.js"></script>
-<script src="src/angular-gauge.js"></script>
+<script src="components/angular-gaugejs/angular-gauge.js"></script>
 ```
 
 Add the module `gaugejs` as a dependency to your app module:

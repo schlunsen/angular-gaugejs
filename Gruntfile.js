@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 		uglify: {
 			dist: {
 				files: {
-					'angular-gauge.min.js': 'src/angular-gauge.js'
+					'dist/angular-gauge.min.js': 'src/angular-gauge.js'
 				}
 			}
 		}
