@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Angular-gaugejs by schlunsen</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Angular-gaugejs</h1>
+        <p>Angular directive for gauge.js</p>
+
+        <p class="view"><a href="https://github.com/schlunsen/angular-gaugejs">View the Project on GitHub <small>schlunsen/angular-gaugejs</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/schlunsen/angular-gaugejs/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/schlunsen/angular-gaugejs/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/schlunsen/angular-gaugejs">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="angular-gaugejs" class="anchor" href="#angular-gaugejs"><span class="octicon octicon-link"></span></a>angular-gaugejs</h1>
+
+<p>Angular directive to show a gauge (using <a href="http://bernii.github.io/gauge.js/">gauge.js</a>)</p>
+
+<p>Copyright (C) 2014, Rasmus Schlünsen </p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Include both gauge.js and angular-gauge.js in your application.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"components/gauge.js/dist/gauge.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"components/angular-gaugejs/angular-gauge.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Add the module <code>gaugejs</code> as a dependency to your app module:</p>
+
+<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">myapp</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'myapp'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'gaugejs'</span><span class="p">]);</span>
+</pre></div>
+
+<p>You can now start using the gaugejs directive to display an animated gauge. 
+Currently the directive must be used on canvas tags</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;canvas</span> <span class="na">gaugejs</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/schlunsen">schlunsen</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-47554301-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
