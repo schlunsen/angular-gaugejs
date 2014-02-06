@@ -23,7 +23,9 @@
                 $scope.gauge.maxValue = $scope.maxValue;
                 $scope.$watchCollection('[options, value]', function(newValues){
                     $scope.gauge.setOptions(newValues[0]);
-                    $scope.gauge.set(newValues[1]);
+                    if (!isNaN(newValues[1])){
+                        $scope.gauge.set(newValues[1]);
+                    }
                 });
             },
         };
