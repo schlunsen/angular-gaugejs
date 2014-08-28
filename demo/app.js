@@ -2,22 +2,22 @@ var app = angular.module('gauge', ['gaugejs']);
 
 app.controller('test', ['$scope', '$timeout', function($scope, $timeout) {
     $scope.animationTime = 10;
-    $scope.value = 3000;
-    $scope.maxValue = 3000;
-
+    $scope.value = 1000;
+    $scope.maxValue = 2000;
+    
     $scope.gaugeOptions = {
         lines: 12,
         // The number of lines to draw
         angle: 0.15,
         // The length of each line
-        lineWidth: 0.44,
+        lineWidth: 0.4,
         // The line thickness
         pointer: {
-            length: 0.9,
+            length: 0.7,
             // The radius of the inner circle
             strokeWidth: 0.035,
             // The rotation offset
-            color: '#000000' // Fill color
+            color: '#666666' // Fill color
         },
         limitMax: 'false',
         // If true, the pointer will not go past the end of the gauge

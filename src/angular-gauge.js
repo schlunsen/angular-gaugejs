@@ -21,6 +21,9 @@
             controller: function($scope, $element) {
                 $scope.gauge = new Gauge($element[0]);
                 $scope.gauge.maxValue = $scope.maxValue;
+
+                $scope.gauge.setTextField(document.getElementById("gauge-value"));
+
                 $scope.$watchCollection('[options, value]', function(newValues){
                     $scope.gauge.setOptions(newValues[0]);
                     if (!isNaN(newValues[1])){

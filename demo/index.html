@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
 <script src="app.js"></script>
+
 <script src="../src/angular-gauge.js"></script>
-<script src="../components/gauge.js/dist/gauge.min.js"></script>
+<script src="gauge.js"></script>
 
 <meta charset=utf-8 />
 <title>Angular-Gaugejs</title>
 </head>
-<body ng-app="gauge" class="container">
+<body ng-app="gauge" class="container text-center">
   <h2>Gauge.js for angular</h2>
-  <hr />
+  <i>now with fancy-pants number displays!</i>
+  <hr/>
   
   <div ng-controller="test">
+
+    <div class="container text-center" style="width: 330px;">
+
+      <h2 id="gauge-value" style="margin-bottom: -15px;"></h2>
       <canvas gaugejs options="gaugeOptions" value="value" max-value="maxValue" animation-time="animationTime"></canvas>
-      <hr />
+      <div class="row" style="margin-top: -40px;">
+        <div class="col-xs-6"> 0 </div>
+        <div class="col-xs-6"> {{maxValue}} </div>
+      </div>
+
+      <hr/>
       
       <label for="">Value</label>
       <input type="number" ng-model="value" />
 
-
+    </div>
+    
   </div>
   
 </body>
