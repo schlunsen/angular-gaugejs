@@ -16,10 +16,15 @@
                 'animationTime': '=',
                 'value': '=',
                 'options': '=',
-                'maxValue': '='
+                'maxValue': '=',
+		        'gaugeType': '='
             },
             controller: function($scope, $element) {
-                $scope.gauge = new Gauge($element[0]);
+		        if ($scope.gaugeType === 'donut') {
+		            $scope.gauge = new Donut($element[0]);
+		        } else {
+                    $scope.gauge = new Gauge($element[0]);
+		        }
                 $scope.gauge.maxValue = $scope.maxValue;
                 $scope.$watchCollection('[options, value]', function(newValues){
                     $scope.gauge.setOptions(newValues[0]);
