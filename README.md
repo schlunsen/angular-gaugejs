@@ -25,3 +25,7 @@ Currently the directive must be used on canvas tags
 ```html
 <canvas gaugejs></canvas>
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/schlunsen/angular-gaugejs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
