@@ -2,7 +2,7 @@
   "name": "angular-gaugejs",
   "version": "0.1",
   "main": [
-    "angular-gaugejs.js"
+    "src/angular-gauge.js"
   ],
   "ignore": [
     "README.md"
